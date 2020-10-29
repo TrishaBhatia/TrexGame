@@ -81,7 +81,7 @@ function draw()
   
   if(keyDown("space")&&trex.y>=134)
     {
-      trex.velocityY=-5;
+      trex.velocityY=-10;
       
     }
   if(ground.x<0)
@@ -107,6 +107,7 @@ function draw()
       
       gameover.visible=true;
       restart.visible=true;
+      trex.velocityY=0;
       
   }
   if(mousePressedOver(restart))
